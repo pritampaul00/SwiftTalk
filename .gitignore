@@ -1,58 +1,27 @@
-# =========================
-# Root level
-# =========================
+# Dependencies
 node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files
 .env
-.env.*
-!.env.example
-!client/.env.example
-!server/.env.example
+.env.local
+client/.env
+server/.env
+
+# Build outputs
+dist/
+build/
+client/dist/
+.vite/
 
 # Logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
 
-# OS / Editor
+# OS / Editor files
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
-# =========================
-# Client (Vite + React)
-# =========================
-client/node_modules/
-client/dist/
-client/.env
-client/.env.*
-
-# Vite cache
-client/node_modules/.vite/
-
-# =========================
-# Server (Node + Express)
-# =========================
-server/node_modules/
-server/.env
-server/.env.*
-
-# =========================
-# Build / Deploy
-# =========================
-build/
-dist/
-
-# =========================
-# Temporary / Runtime
-# =========================
-tmp/
-temp/
-uploads/
-
-# =========================
-# Database files (if any)
-# =========================
-*.db
-*.sqlite
